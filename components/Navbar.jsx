@@ -98,7 +98,7 @@ const Navbar = () => {
           <Button 
             variant="primary"
             borderColor="border-black"
-            className='!text-black custom '
+            
           >
             Let's talk <ArrowIcon />
           </Button>

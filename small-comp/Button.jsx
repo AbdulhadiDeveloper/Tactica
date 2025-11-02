@@ -36,7 +36,7 @@ const Button = ({
     variantStyles = 'bg-white text-orange-600 border border-orange-600 hover:bg-orange-50 focus:ring-orange-500';
   } else { 
     // Default: Primary (Solid Orange)
-    variantStyles = 'bg-orange-600 text-white hover:bg-orange-700 focus:ring-orange-500 shadow-lg border border-transparent'; 
+    variantStyles = 'bg-orange-600 text-black hover:bg-orange-700 focus:ring-orange-500 shadow-lg border border-black'; 
   }
 
   // 4. Custom Color Overrides (Agar props diye gaye hain)
