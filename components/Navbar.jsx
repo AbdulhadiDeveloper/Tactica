@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Button from '../small-comp/Button.jsx';
-import './Custom.css'
 
 
 const ArrowIcon = () => (
