@@ -1,8 +1,6 @@
 import React from 'react';
 
 // Helper component for social icons (using SVGs for clarity)
-
-
 const SocialIcon = ({ href, icon, label }) => (
     <a 
         href={href} 
@@ -24,10 +22,12 @@ const Icons = {
 };
 
 const Footer = () => {
-    const navItemClasses = "text-white text-sm transition duration-200";
+    // FIX: Changed from text-white to text-gray-400 (faded white effect) for all navigation links
+    const navItemClasses = "text-gray-400 hover:text-white transition duration-200 text-sm"; 
 
     return (
-        <div className="bg-black text-white pt-16">
+        // FIX: Replaced div with semantic footer tag
+        <footer className="bg-black text-white pt-16"> 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 
                 {/* --- Main 4-Column Grid (Stacks on Mobile) --- */}
@@ -36,14 +36,16 @@ const Footer = () => {
                     {/* COLUMN 1: Logo & CTA */}
                     <div className="lg:col-span-1 space-y-6">
                         <div className='w-48'> 
-                            <img src="https://seotactica.com/wp-content/uploads/2023/10/WHITE_LOGO_TACTICA.webp" alt="" />
+                             {/* Logo URL */}
+                            <img src="https://seotactica.com/wp-content/uploads/2023/10/WHITE_LOGO_TACTICA.webp" alt="Tactica Logo" />
                         </div>
                         
                         <div className="text-3xl font-bold leading-snug">
                             Want to<br/>collaborate with<br/>us
                         </div>
                         
-                        <button className="bg-orange-600 text-white font-semibold px-6 py-3 rounded-full flex items-center space-x-2  transition duration-300">
+                        {/* FIX: Added hover:bg-orange-700 back */}
+                        <button className="bg-orange-600 text-white font-semibold px-6 py-3 rounded-full flex items-center space-x-2 hover:bg-orange-700 transition duration-300">
                             <span>Let's talk</span>
                             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                         </button>
@@ -60,7 +62,8 @@ const Footer = () => {
 
                     {/* COLUMN 2: Services Menu */}
                     <div className="flex flex-col space-y-3">
-                        <h5 className="text-lg text-[#FFFFFF80] font-medium mb-2">Services</h5>
+                        {/* FIX: Changed h5 color class */}
+                        <h5 className="text-lg text-gray-400 font-medium mb-2">Services</h5>
                         <a href="#" className={navItemClasses}>SEO</a>
                         <a href="#" className={navItemClasses}>Web Development</a>
                         <a href="#" className={navItemClasses}>Social Media</a>
@@ -70,7 +73,8 @@ const Footer = () => {
 
                     {/* COLUMN 3: Company Menu */}
                     <div className="flex flex-col space-y-3">
-                        <h5 className="text-lg text-[#FFFFFF80] font-medium mb-2">Company</h5>
+                        {/* FIX: Changed h5 color class */}
+                        <h5 className="text-lg text-gray-400 font-medium mb-2">Company</h5>
                         <a href="#" className={navItemClasses}>About</a>
                         <a href="#" className={navItemClasses}>Our Professional Services</a>
                         <a href="#" className={navItemClasses}>Our Work: Proven Success Across Industries</a>
@@ -80,18 +84,20 @@ const Footer = () => {
 
                     {/* COLUMN 4: Content Hub (Nested Structure) */}
                     <div className="flex flex-col space-y-4">
-                        <h5 className="text-lg text-[#FFFFFF80] font-medium mb-2">Content Hub</h5>
+                        {/* FIX: Changed h5 color class */}
+                        <h5 className="text-lg text-gray-400 font-medium mb-2">Content Hub</h5>
                         
-                        <p className="text-sm font-semibold text-white">PPC Content Hub</p>
+                        {/* Content Subsections */}
+                        <p className="text-sm font-semibold text-gray-300">PPC Content Hub</p>
                         <a href="#" className={navItemClasses}>What is a good ROAS: How to Maximize Your Potential</a>
 
-                        <p className="text-sm font-semibold text-white">Social Media Marketing Content Hub</p>
+                        <p className="text-sm font-semibold text-gray-300">Social Media Marketing Content Hub</p>
                         <a href="#" className={navItemClasses}>Healthcare Social Media Marketing</a>
 
-                        <p className="text-sm font-semibold text-white">Graphic Design Content Hub</p>
+                        <p className="text-sm font-semibold text-gray-300">Graphic Design Content Hub</p>
                         <a href="#" className={navItemClasses}>9 Alternative Careers for Graphic Designers</a>
                         
-                        <a href="#" className="text-white transition duration-200 pt-2 text-sm">View more</a>
+                        <a href="#" className="text-orange-600 hover:text-white transition duration-200 pt-2 text-sm">View more</a>
                     </div>
 
                 </div>
@@ -101,7 +107,7 @@ const Footer = () => {
                     <p className="text-sm text-gray-400">© Copyright 2024 - Tactica</p>
                 </div>
             </div>
-        </div>
+        </footer>
     );
 };
 
