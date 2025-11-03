@@ -18,7 +18,7 @@ const Button = ({
 }) => {
   
   // 1. Base Styles (Jo har button par honge)
-  const baseStyles = 'font-semibold rounded-full transition duration-300 focus:outline-none focus:ring-2 focus:ring-opacity-50 inline-flex items-center justify-center';
+  const baseStyles = 'font-lg rounded-full transition duration-300 focus:outline-none focus:ring-2 focus:ring-opacity-50 inline-flex items-center justify-center';
 
   // 2. Size Styles
   let sizeStyles = '';
@@ -33,15 +33,15 @@ const Button = ({
   let variantStyles = '';
   if (variant === 'secondary') {
     // White background, Orange border
-    variantStyles = 'bg-white text-orange-600 border border-orange-600 hover:bg-orange-50 focus:ring-orange-500';
+    variantStyles = 'bg-white text-orange-600 border border-orange-600 hover:bg-orange-50 focus:ring-orange-600';
   } else { 
     // Default: Primary (Solid Orange)
-    variantStyles = 'bg-orange-600 text-black hover:bg-orange-700 focus:ring-orange-500 shadow-lg border border-black'; 
+    variantStyles = 'bg-orange-600 text-black hover:bg-orange-700 focus:ring-orange-600  border border-black'; 
   }
 
   // 4. Custom Color Overrides (Agar props diye gaye hain)
   let finalBg = bgColor ? bgColor : '';
-  let finalBorder = borderColor ? `border border-2 ${borderColor}` : '';
+  let finalBorder = borderColor ? `border border-1 ${borderColor}` : '';
   
   // 5. Final Class Assembly
   // Internal classes ko pehle jodda, phir external className ko aakhir mein joda (Override ke liye)

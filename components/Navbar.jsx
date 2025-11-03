@@ -35,7 +35,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="px-14 sticky top-0 bg-white shadow-md z-50 h-[75px]">
+    <nav className=" sm:px-20 px:none sticky top-0 bg-white shadow-md z-50 h-[100px]">
       
       {/* Inner Container: Full Height (h-full) aur Vertical Centering (items-center) */}
       <div className="max-w-7xl mx-auto flex justify-between items-center h-full">
@@ -110,7 +110,7 @@ const Navbar = () => {
                 variant="primary"
                 size="small"
                 borderColor="border-black"
-                className='!text-black custom'
+                
             >
                 Let's talk
             </Button>
@@ -118,7 +118,7 @@ const Navbar = () => {
             {/* Mobile Menu Toggle (Hamburger) */}
             <button 
                 onClick={() => setIsOpen(!isOpen)} 
-                className="text-gray-700 hover:text-orange-700 focus:outline-none p-2"
+                className="text-black hover:text-orange-600 focus:outline-none p-2"
                 aria-label="Toggle Menu"
             >
                 {isOpen ? (

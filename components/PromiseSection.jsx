@@ -80,7 +80,7 @@ const PromiseSection = () => {
           </div>
           
           {/* 2. RIGHT COLUMN: Details (Numbered Sections) */}
-          <div className="w-full lg:w-5/12 ml-7">
+          <div className="w-full lg:w-5/12">
             {/* Outer container provides the bottom line, items provide the top line */}
             <div className="border-b border-black"> 
               {promiseDetails.map((item, index) => {

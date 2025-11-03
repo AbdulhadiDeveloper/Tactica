@@ -175,7 +175,7 @@ const MissionSection = () => {
                   <img
                     src="https://seotactica.com/wp-content/uploads/2023/09/Group-458-1.png"
                     alt="Team Update"
-                    className="w-[50px] h-[50px] ml-[315px] mt-2 object-cover rounded-md"
+                    className="w-[50px] h-[50px] lg:ml-[315px] lg:mt-2 md:ml-[150px] md:mt-2  object-cover rounded-md"
                   />
                 </div>
                 <button className="bg-[#B9F7FF] border border-black text-black px-[35px] py-[10px] rounded-full text-sm mr-[35px] mt-3 ">
