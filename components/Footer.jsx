@@ -1,33 +1,33 @@
 import React from 'react';
 
 // Helper component for social icons (using SVGs for clarity)
-const SocialIcon = ({ href, icon, label }) => (
-    <a 
-        href={href} 
-        target="_blank" 
-        rel="noopener noreferrer" 
-        className="w-8 h-8 rounded-full border border-gray-500 text-gray-400 flex items-center justify-center 
-                   hover:text-white hover:border-white transition duration-200"
-        aria-label={`Follow on ${label}`}
-    >
-        {icon}
-    </a>
-);
-
-// Inline SVG paths for social icons
-const Icons = {
-    Facebook: <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 fill-current" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>,
-    Instagram: <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 fill-current" viewBox="0 0 24 24"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112 8a4 4 0 014 3.37zM17.5 6.5h.01"/></svg>,
-    LinkedIn: <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 fill-current" viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6.5A2.5 2.5 0 116.5 4 2.5 2.5 0 014 6.5z"/></svg>,
-};
 
 
 const Footer = () => {
+    const SocialIcon = ({ href, icon, label }) => (
+        <a 
+            href={href} 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="w-8 h-8 rounded-full border border-gray-500 text-gray-400 flex items-center justify-center 
+                       hover:text-white hover:border-white transition duration-200"
+            aria-label={`Follow on ${label}`}
+        >
+            {icon}
+        </a>
+    );
+    
+    // Inline SVG paths for social icons
+    const Icons = {
+        Facebook: <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 fill-current" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>,
+        Instagram: <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 fill-current" viewBox="0 0 24 24"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112 8a4 4 0 014 3.37zM17.5 6.5h.01"/></svg>,
+        LinkedIn: <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 fill-current" viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6.5A2.5 2.5 0 116.5 4 2.5 2.5 0 014 6.5z"/></svg>,
+    };
     
     const navItemClasses = "text-white text-sm transition duration-200";
 
     return (
-        <footer className="bg-black text-white pt-16">
+        <div className="bg-black text-white pt-16">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 
                 {/* --- Main 4-Column Grid (Stacks on Mobile) --- */}
@@ -101,7 +101,7 @@ const Footer = () => {
                     <p className="text-sm text-gray-400">© Copyright 2024 - Tactica</p>
                 </div>
             </div>
-        </footer>
+        </div>
     );
 };
 

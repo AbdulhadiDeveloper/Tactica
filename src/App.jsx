@@ -115,8 +115,8 @@ function App() {
         <StatsContactSection/>
 
       </main>
-      
-      <Footer/>
+
+      <Footer/>      
     </div>
   );
 }
