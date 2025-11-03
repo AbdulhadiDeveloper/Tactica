@@ -3,7 +3,6 @@
 import React from 'react';
 // Local App.jsx (Probable Error Source)
 import Navbar from '../components/Navbar'; 
-import "../src/App.css"
 import AboutHero from '../components/AboutHero';
 import TeamCollage from '../components/TeamCollage';
 import TextSection from '../components/TextSection';
