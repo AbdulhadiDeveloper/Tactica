@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 // Local App.jsx (Probable Error Source)
 import Navbar from '../components/Navbar'; 
