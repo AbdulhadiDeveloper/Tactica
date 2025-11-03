@@ -16,7 +16,6 @@ import TeamGridSection from '../components/TeamGridSection';
 import ContentHub from '../components/ContentHub';
 import BlogSection from '../components/BlogSection';
 import StatsContactSection from '../components/StatsContactSection';
-import Footer from '../components/footer';
 
 
 function App() {
@@ -113,7 +112,6 @@ function App() {
 
       </main>
 
-      <Footer/>      
     </div>
   );
 }
